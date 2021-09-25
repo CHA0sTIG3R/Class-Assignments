@@ -1,13 +1,12 @@
 package Assignment3;
 
 
-import java.util.Arrays;
-import java.util.TreeMap;
-import java.util.Scanner;
+import java.util.*;
+
 
 public class Problem5 {
     public static void main(String[] args) {
-        int num, counter = 0, count = 0;
+        int num, count = 0;
         int[] arr = new int[100];
         int[] unq = new int[100];
 
@@ -16,12 +15,11 @@ public class Problem5 {
         while (true){
             System.out.print("Enter a number between 1 and 100 (enter 0 to stop): ");
             num = input.nextInt();
-            counter++;
-            arr[counter] = num;
-            if (!Arrays.asList(unq).contains(num)){
-                count++;
-                unq[count] = num;
-            }
+            count++;
+            arr[count] = num;
+            
+            unq[count] = num;
+
             if (num == 0){
                 break;
             }
