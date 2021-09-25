@@ -1,9 +1,19 @@
 package Assignment3;
 import Assignment1.*;
 
+/**
+ * @author Hamzat Olowu
+ * <ul><li>Created On 09/24/2021
+ */
 public class Triangle {
     double s1, s2, s3;
 
+    /**
+     * Class Constructor
+     * @param s1
+     * @param s2
+     * @param s3
+     */
     public Triangle(double s1, double s2, double s3){
         this.s1 = s1;
         this.s2 = s2;
@@ -26,6 +36,13 @@ public class Triangle {
         this.s3 = problem1.distance(x3, y3, x1, y1);
     }
 
+    /**
+     * Check if the sides {@code s1}, {@code s2} & {@code s3} meets the standard of a + b > c
+     * @param s1
+     * @param s2
+     * @param s3
+     * @return {@code true} or {@code false}
+     */
     public boolean isValid(double s1, double s2, double s3) {
         // check if a + b > c
         if ((s1 + s2 > s3) && (s2 + s3 > s1) && (s3 + s1 > s2)){
@@ -39,7 +56,7 @@ public class Triangle {
     }
     
     /**
-     * Returns the perimeter of a triangle
+     * Calculate the perimeter of a triangle
      * 
      * @param s1
      * @param s2
@@ -51,7 +68,7 @@ public class Triangle {
     }
 
     /**
-     * Returns the area of a triangle
+     * Calculate the area of a triangle
      * 
      * @param s1
      * @param s2
