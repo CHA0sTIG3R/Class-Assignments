@@ -24,29 +24,11 @@ public class Problem1 {
            name[i] = studentName;
            score[i] = studentScore;
        }
-       
+
        sortStudents(name, score);
        for (int i = 0; i < name.length; i++){
            System.out.println(name[i]+" --> "+score[i]);
        }
-    }
-
-    public static int [] bubbleSort(int [] arr) {
-        int i = 1, hold; boolean check = false;
-
-        while (i < arr.length && check == false){
-            check = true;
-            for (int j = 0; j < arr.length - i; j++){
-                if (arr[j] > arr[j+1]){
-                    hold = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = hold;
-                    check = false;
-                }
-            }
-            i++;
-        }
-        return arr;
     }
 
     public static void sortStudents(String [] name, int [] score) {
