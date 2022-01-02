@@ -137,13 +137,14 @@ and finds the central city and its total distance to all other cities.
 * The program then displays the location of the first element in the maximum square submatrix and the number of rows in the submatrix. 
 * For example, given the following 5 x 5 matrix:
 
-|   |   |   |   |
-|---|---|---|---|---
-|1	|0	|1	|0	|1
-|1	|1	|1	|0	|1
-|1	|0	|1	|1	|1
-|1	|0	|1	|1	|1
-|1	|0	|1	|1	|1
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+|1 |0 |1 |0 |1 |
+|1 |1 |1 |0 |1 |
+|1 |0 |1 |1 |1 |
+|1 |0 |1 |1 |1 |
+|1 |0 |1 |1 |1 |
 
 * The location of the first element is row 2 and column 2. Therefore, the program should produce the following output:
   * The maximum square submatrix is at `(2, 2)` with size 3.
